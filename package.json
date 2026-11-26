@@ -1,0 +1,1 @@
+{"name":"mahisagar-hospital-cms","private":true,"type":"module","scripts":{"check":"node --check src/worker.js && node --check src/defaults.js && node --check src/admin-ui.js"}}
