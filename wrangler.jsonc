@@ -11,7 +11,7 @@
     {
       "binding": "DB",
       "database_name": "mahisagar-hospital-cms",
-      "database_id": "PASTE_YOUR_DATABASE_ID"
+      "database_id": "e9a2bcaf-d63c-4a5e-9cd0-579343d0b513"
     }
   ],
   "kv_namespaces": [
