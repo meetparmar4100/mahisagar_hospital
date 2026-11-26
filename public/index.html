@@ -2603,7 +2603,7 @@ html,body{scroll-behavior:auto!important;scroll-snap-type:none!important;overflo
 #root .homeLayout main>.section:not(.faqSection),#root .homeLayout .newSection>.section:not(.faqSection){justify-content:flex-start!important;padding-top:calc(var(--header-clear,100px) + 18px)!important;padding-bottom:24px;background:#f7fafb}
 #root .homeLayout main>.hero+.section{margin-top:0!important}
 @media(max-width:700px){#root .siteHeader .brand .logo img{max-width:30vw}#root .siteHeader .brand .logo{padding:2px}#root .siteHeader .brand strong{font-size:clamp(13px,3.3vw,20px)}}
-</style><style>.snap-motion-control{position:fixed;left:16px;bottom:16px;z-index:60;padding:9px 14px!important;background:#102b45!important;color:white!important;font-size:13px;border:1px solid #b9c9d6!important}.snap-motion-control[hidden]{display:none!important}</style></head>
+</style></head>
 
 <body>
     <div id="root"></div>
@@ -3447,9 +3447,9 @@ Modernizr 3.0.0pre (Custom Build) | MIT
     <script>(() => {const b = document.querySelector('.backtop'); const update = () => b.hidden = scrollY < 450; window.addEventListener('scroll', update, {passive: true}); b.onclick = () => window.scrollTo({top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'}); update()})();</script>
     <script>(() => {
             const selector='#root main>.hero,#root main>.section,#root .newSection>.section';
-            let locked=false, animation=0, start=null, snapDisabled=false;
+            let locked=false, animation=0, start=null;
             const home=()=>!!document.querySelector('#root .homeLayout');
-            const active=()=>home()&&!snapDisabled;
+            const active=()=>home();
             const root=()=>document.scrollingElement||document.documentElement;
             const top=()=>root().scrollTop;
             const durationMs=()=>Math.max(100,Math.min(2000,Number(window.HOSPITAL?.site?.scrollDuration)||500));
@@ -3462,7 +3462,7 @@ Modernizr 3.0.0pre (Custom Build) | MIT
             window.addEventListener('touchstart',e=>{start=active()&&e.touches.length===1?{x:e.touches[0].clientX,y:e.touches[0].clientY,target:e.target}:null},{passive:true});
             window.addEventListener('touchmove',e=>{if(!start||!active()||e.touches.length!==1)return;const dy=start.y-e.touches[0].clientY,dx=start.x-e.touches[0].clientX;if(Math.abs(dy)<8||Math.abs(dx)>Math.abs(dy)||nested(start.target,Math.sign(dy)))return;if(e.cancelable)e.preventDefault();if(!start.done){start.done=true;step(Math.sign(dy))}},{passive:false});
             window.addEventListener('touchend',()=>start=null,{passive:true});window.addEventListener('touchcancel',()=>start=null,{passive:true});
-            window.addEventListener('hashchange',()=>{cancel();requestAnimationFrame(()=>{offset();updateMotionControl()})});window.addEventListener('resize',()=>{cancel();offset()});offset();if(window.ResizeObserver){const h=document.querySelector('#root .siteHeader');if(h)new ResizeObserver(offset).observe(h)}const motionPreference=matchMedia('(prefers-reduced-motion: reduce)');const motionControl=document.createElement('button');motionControl.type='button';motionControl.className='snap-motion-control';motionControl.onclick=()=>{cancel();snapDisabled=!snapDisabled;updateMotionControl()};document.body.appendChild(motionControl);function updateMotionControl(){motionControl.hidden=!home()||!motionPreference.matches;motionControl.textContent=snapDisabled?'Enable section scrolling':'Use normal scrolling';motionControl.setAttribute('aria-pressed',String(snapDisabled))}updateMotionControl();if(motionPreference.addEventListener)motionPreference.addEventListener('change',updateMotionControl);
+            window.addEventListener('hashchange',()=>{cancel();requestAnimationFrame(offset)});window.addEventListener('resize',()=>{cancel();offset()});offset();if(window.ResizeObserver){const h=document.querySelector('#root .siteHeader');if(h)new ResizeObserver(offset).observe(h)}
         })();</script>
 </body>
 
