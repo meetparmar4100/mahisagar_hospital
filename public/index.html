@@ -2599,11 +2599,9 @@
 #root .siteHeader .brand .logo img{display:block;max-width:min(32vw,290px);object-fit:contain}
 .hospital-footer-logo{display:block;background:#b9c9d6;padding:9px;border:1px solid #819caf;border-radius:10px;box-shadow:inset 0 1px 1px #ffffff40;width:min(100%,290px);height:auto;max-width:100%;object-fit:contain;margin-bottom:16px}
 html,body{scroll-behavior:auto!important;scroll-snap-type:none!important;overflow-anchor:none!important}
-#root .innerLayout main>.hero.pagehead,#root .innerLayout main>.section{min-height:max(220px,calc(100dvh - var(--header-clear,100px)));box-sizing:border-box}
 #root .innerLayout main>.section{scroll-margin-top:var(--header-clear,100px)}
 #root .homeLayout main>.section:not(.faqSection),#root .homeLayout .newSection>.section:not(.faqSection){justify-content:flex-start!important;padding-top:calc(var(--header-clear,100px) + 18px)!important;padding-bottom:24px;background:#f7fafb}
 #root .homeLayout main>.hero+.section{margin-top:0!important}
-@media(prefers-reduced-motion:reduce){#root .innerLayout main>.hero.pagehead,#root .innerLayout main>.section{min-height:0}}
 @media(max-width:700px){#root .siteHeader .brand .logo img{max-width:30vw}#root .siteHeader .brand .logo{padding:2px}#root .siteHeader .brand strong{font-size:clamp(13px,3.3vw,20px)}}
 </style></head>
 
@@ -3451,14 +3449,14 @@ Modernizr 3.0.0pre (Custom Build) | MIT
             const selector='#root main>.hero,#root main>.section,#root .newSection>.section';
             let locked=false, animation=0, start=null;
             const home=()=>!!document.querySelector('#root .homeLayout');
-            const active=()=>!!document.querySelector('#root main');
+            const active=()=>home();
             const root=()=>document.scrollingElement||document.documentElement;
             const top=()=>root().scrollTop;
             const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
             function offset(){const h=document.querySelector('#root .siteHeader');const n=h?Math.ceil(h.getBoundingClientRect().height+(parseFloat(getComputedStyle(h).top)||0)+12):90;document.documentElement.style.setProperty('--header-clear',n+'px');return n}
             function points(){const footer=document.querySelector('#root .siteFooter'),off=offset(),isHome=home();if(footer)document.documentElement.style.setProperty('--footer-height',footer.offsetHeight+'px');const screen=innerHeight,view=Math.max(100,screen-off),max=Math.max(0,root().scrollHeight-screen),y=top(),out=[0];const clamp=v=>Math.max(0,Math.min(max,Math.ceil(v)));const add=v=>{v=clamp(v);if(v>out[out.length-1]+8)out.push(v)};const sections=Array.from(document.querySelectorAll(selector));const anchors=sections.map((el,i)=>i===0?0:clamp(el.getBoundingClientRect().top+y-(isHome?0:off)));if(footer&&!isHome)anchors.push(clamp(footer.getBoundingClientRect().top+y-off));anchors.push(max);for(let i=0;i<anchors.length-1;i++){const from=anchors[i],to=anchors[i+1];add(from);const hero=sections[i]?.classList.contains('hero');if(!hero&&to-from>screen+24){const tail=to-screen;for(let pos=from+view;pos<tail-24;pos+=view)add(pos);if(tail>from+24)add(tail)}add(to)}if(max>out[out.length-1]){if(max-out[out.length-1]<=8&&out.length>1)out[out.length-1]=max;else out.push(max)}return out}
             function cancel(){cancelAnimationFrame(animation);animation=0;locked=false}
-            function step(dir){if(locked)return;const y=top(),p=points(),target=dir>0?p.find(v=>v>y+8):p.slice().reverse().find(v=>v<y-8);if(target===undefined)return;locked=true;const begin=performance.now(),duration=reduced()?0:500;function frame(now){const t=duration?Math.min(1,(now-begin)/duration):1,ease=(1-Math.cos(Math.PI*t))/2;root().scrollTop=y+(target-y)*ease;if(t<1)animation=requestAnimationFrame(frame);else{root().scrollTop=target;locked=false;animation=0}}animation=requestAnimationFrame(frame)}
+            function step(dir){if(locked)return;const y=top(),p=points(),target=dir>0?p.find(v=>v>y+8):p.slice().reverse().find(v=>v<y-8);if(target===undefined)return;locked=true;const begin=performance.now(),duration=reduced()?0:Math.max(100,Math.min(2000,Number(window.HOSPITAL?.site?.scrollDuration)||500));function frame(now){const t=duration?Math.min(1,(now-begin)/duration):1,ease=(1-Math.cos(Math.PI*t))/2;root().scrollTop=y+(target-y)*ease;if(t<1)animation=requestAnimationFrame(frame);else{root().scrollTop=target;locked=false;animation=0}}animation=requestAnimationFrame(frame)}
             function nested(t,dir){for(let e=t instanceof Element?t:t?.parentElement;e&&e!==document.body;e=e.parentElement){if(e.matches('textarea,input,select,[contenteditable=true],.photoDialog,video[controls]'))return true;if(e.matches('#root,.homeLayout,.innerLayout,main,html'))continue;const c=getComputedStyle(e);if(/auto|scroll/.test(c.overflowY)&&e.scrollHeight>e.clientHeight+2&&(dir>0?e.scrollTop+e.clientHeight<e.scrollHeight-2:e.scrollTop>2))return true}return false}
             window.addEventListener('wheel',e=>{if(!active()||e.ctrlKey||e.shiftKey||!Number.isFinite(e.deltaY)||e.deltaY===0||nested(e.target,Math.sign(e.deltaY)))return;if(e.cancelable)e.preventDefault();if(!locked)step(Math.sign(e.deltaY))},{passive:false,capture:true});
             window.addEventListener('touchstart',e=>{start=active()&&e.touches.length===1?{x:e.touches[0].clientX,y:e.touches[0].clientY,target:e.target}:null},{passive:true});
