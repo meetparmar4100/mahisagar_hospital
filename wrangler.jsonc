@@ -1,0 +1,26 @@
+{
+  "name": "mahisagarhospital",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-26",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "mahisagar-hospital-cms",
+      "database_id": "PASTE_YOUR_DATABASE_ID"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "MEDIA",
+      "id": "2b8083c52948400aa56525f86e59e2b3"
+    }
+  ],
+  "vars": {
+    "ADMIN_USER": "admin"
+  }
+}
