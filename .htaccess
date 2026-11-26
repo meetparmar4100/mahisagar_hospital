@@ -1,0 +1,9 @@
+DirectoryIndex index.php
+Options -Indexes
+RewriteEngine On
+RewriteRule ^(?:private|src)(?:/|$) - [F,L,NC]
+RewriteRule ^(?:\.git(?:/|$)|README\.md$|schema\.sql$|wrangler\.jsonc$|deployment-settings\.json$|package\.json$) - [F,L,NC]
+RewriteRule ^assets/([A-Za-z0-9_.-]+)$ public/assets/$1 [L]
+RewriteRule ^public/assets/[A-Za-z0-9_.-]+$ - [L]
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^ index.php [L,QSA]

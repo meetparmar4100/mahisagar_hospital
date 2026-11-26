@@ -1,0 +1,3 @@
+private/uploads/*
+!private/uploads/.htaccess
+private/config.local.php

@@ -1,4 +1,4 @@
-export default {
+{
   "site": {
     "name": "District / Civil Hospital (General Hospital), Lunawada, Gujarat",
     "tagline": "Patient care • Clinical services • Community health",
@@ -427,4 +427,4 @@ export default {
       "image": ""
     }
   ]
-};
+}

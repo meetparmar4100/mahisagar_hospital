@@ -1,0 +1,435 @@
+{
+  "site": {
+    "name": "District / Civil Hospital (General Hospital), Lunawada, Gujarat",
+    "tagline": "Patient care • Clinical services • Community health",
+    "top": "Healthcare • Patient Services",
+    "footer": "Patient care and hospital information portal",
+    "admin": "Administration",
+    "homeButton": "Explore departments",
+    "video": "assets/32466.mp4",
+    "poster": "assets/32475.jpg",
+    "copyright": "District / Civil Hospital (General Hospital), Lunawada, Gujarat",
+    "brandTitle": "Civil Hospital, Lunawada",
+    "brandSubtitle": "District / General Hospital • Gujarat",
+    "logo": "assets/college-wordmark.png",
+    "wellnessImage": "assets/32468.jpg",
+    "wellnessTitle": "Get proactive — preventive healthcare",
+    "wellnessText": "Regular consultations and appropriate screening can help identify health concerns early. Speak with the hospital team about suitable checks, available diagnostic services and follow-up care. Specific packages and prices are not yet confirmed.",
+    "expertsTitle": "Care led by experts — driven by compassion",
+    "expertsIntro": "Explore clinical teams by speciality. Individual doctor profiles, qualifications and schedules will be published after verification.",
+    "specialtiesTitle": "Discover our specialities",
+    "faqTitle": "Frequently asked questions",
+    "homeSectionTitle": "Care, facilities & services",
+    "contactSectionTitle": "Get in touch",
+    "footerCaption": "Patient care · Hospital information",
+    "scrollDuration": "700",
+    "galleryVideo": "assets/32466.mp4",
+    "quickLinks": [
+      {
+        "label": "Departments",
+        "href": "#departments"
+      },
+      {
+        "label": "Patient Services",
+        "href": "#services"
+      },
+      {
+        "label": "Gallery",
+        "href": "#gallery"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#contact"
+      }
+    ]
+  },
+  "pages": {
+    "home": {
+      "menu": "Home",
+      "title": "Compassionate care. Accessible healthcare.",
+      "subtitle": "Welcome to District / Civil Hospital (General Hospital), Lunawada, Gujarat",
+      "banner": "assets/32458.jpg",
+      "blocks": [
+        {
+          "title": "Welcome to District / Civil Hospital (General Hospital), Lunawada, Gujarat",
+          "text": "Patient registration, outpatient consultations, inpatient wards and clinical support facilities are listed in the hospital directory.",
+          "image": "assets/32475.jpg",
+          "mediaSizes": {}
+        },
+        {
+          "title": "Patient services",
+          "text": "Registration and pharmacy counters provide separate queues as indicated on hospital signage.",
+          "image": "assets/32468.jpg",
+          "mediaSizes": {}
+        }
+      ],
+      "intro": "District / Civil Hospital (General Hospital), Lunawada, Gujarat brings together patient registration, outpatient consultations, inpatient care and clinical support services. This website provides an overview of the hospital premises and helps visitors identify departments, counters and facilities before their visit. Explore the floor-wise directory and photographs to become familiar with the hospital environment.",
+      "mediaSizes": {}
+    },
+    "about": {
+      "menu": "About Hospital",
+      "title": "About Hospital",
+      "subtitle": "Hospital overview",
+      "banner": "assets/32458.jpg",
+      "blocks": [
+        {
+          "title": "Our hospital",
+          "text": "The hospital includes clinical wards, registration counters and a conference hall.",
+          "image": "assets/32459.jpg",
+          "mediaSizes": {}
+        }
+      ],
+      "intro": "The hospital premises include registration and pharmacy counters, clinical wards and a conference hall. Its floor-wise directory brings together outpatient departments, inpatient services, diagnostic facilities and supporting units. Visitors can use this website to understand the layout and seek directions from hospital staff when arriving.",
+      "mediaSizes": {}
+    },
+    "departments": {
+      "menu": "Departments",
+      "title": "Departments",
+      "subtitle": "Floor-wise directory",
+      "banner": "assets/32458.jpg",
+      "blocks": [
+        {
+          "title": "Ground floor",
+          "text": "Case registration, pharmacy, blood storage centre, ICU, minor operation theatre, emergency care, laboratory, surgery, sonography and X-ray.",
+          "image": ""
+        },
+        {
+          "title": "First floor",
+          "text": "ICTC and mental health OPD, gynaecology, dental and eye OPD, operation theatres, SNCU and paediatric OPD.",
+          "image": ""
+        },
+        {
+          "title": "Second floor",
+          "text": "Women’s wards, labour room, operation theatre, anaesthesia and postoperative care.",
+          "image": ""
+        },
+        {
+          "title": "Third floor",
+          "text": "Paediatric and medicine wards, isolation ward, STI OPD and CMTC.",
+          "image": ""
+        },
+        {
+          "title": "Fifth floor",
+          "text": "Dialysis, central medical store, linen store, CSSD, laundry and records.",
+          "image": ""
+        },
+        {
+          "title": "Hospital directory",
+          "text": "The displayed directory lists hospital departments and facilities by floor, helping visitors find their way around the premises.",
+          "image": "assets/32465.jpg"
+        }
+      ],
+      "intro": "The hospital directory identifies clinical and support departments across multiple floors. Patients and accompanying family members can refer to the floor-wise information below to locate registration, consultations, diagnostic services and inpatient facilities. Confirm the current location of the required department with hospital staff."
+    },
+    "services": {
+      "menu": "Patient Services",
+      "title": "Patient Services",
+      "subtitle": "Care and assistance",
+      "banner": "assets/32458.jpg",
+      "blocks": [
+        {
+          "title": "Case registration",
+          "text": "Registration counters with designated queues.",
+          "image": "assets/32458.jpg"
+        },
+        {
+          "title": "Pharmacy",
+          "text": "Separate queues for men, women, senior citizens and persons with disabilities are indicated.",
+          "image": "assets/32468.jpg"
+        },
+        {
+          "title": "Cloth bag vending machine",
+          "text": "The signage encourages reusable cloth bags and a plastic-free future.",
+          "image": "assets/32482.jpg"
+        }
+      ],
+      "intro": "Patient services include case registration and pharmacy counters, with designated queues indicated by hospital signage. Visitors should follow the displayed instructions and ask staff for guidance about the appropriate counter or department. The premises also feature a cloth bag vending machine promoting reusable bags."
+    },
+    "infrastructure": {
+      "menu": "Infrastructure",
+      "title": "Infrastructure",
+      "subtitle": "Hospital facilities",
+      "banner": "assets/32458.jpg",
+      "blocks": [
+        {
+          "title": "Inpatient facilities",
+          "text": "A view of the inpatient facilities within the hospital premises, included to help visitors become familiar with the facilities.",
+          "image": "assets/32475.jpg"
+        },
+        {
+          "title": "Ward beds",
+          "text": "A view of the ward beds within the hospital premises, included to help visitors become familiar with the facilities.",
+          "image": "assets/32472.jpg"
+        },
+        {
+          "title": "Ward interior",
+          "text": "A view of the ward interior within the hospital premises, included to help visitors become familiar with the facilities.",
+          "image": "assets/32481.jpg"
+        },
+        {
+          "title": "Clinical ward",
+          "text": "A view of the clinical ward within the hospital premises, included to help visitors become familiar with the facilities.",
+          "image": "assets/32460.jpg"
+        },
+        {
+          "title": "Conference hall",
+          "text": "The photograph shows a conference hall with seating arranged for meetings and presentations.",
+          "image": "assets/32459.jpg"
+        }
+      ],
+      "intro": "The hospital photographs show inpatient wards, beds, clinical spaces and a conference hall. These images provide a visual introduction to the premises and complement the floor-wise directory. Access to clinical areas is subject to hospital instructions."
+    },
+    "gallery": {
+      "menu": "Gallery",
+      "title": "Photo & Video Gallery",
+      "subtitle": "Hospital photographs",
+      "banner": "assets/32458.jpg",
+      "blocks": [
+        {
+          "title": "Ward overview",
+          "text": "A view of the ward overview within the hospital premises, included to help visitors become familiar with the facilities.",
+          "image": "assets/32479.jpg"
+        },
+        {
+          "title": "Registration area",
+          "text": "A view of the registration area within the hospital premises, included to help visitors become familiar with the facilities.",
+          "image": "assets/32478.jpg"
+        },
+        {
+          "title": "Patient ward",
+          "text": "A view of the patient ward within the hospital premises, included to help visitors become familiar with the facilities.",
+          "image": "assets/32469.jpg"
+        },
+        {
+          "title": "General ward",
+          "text": "A view of the general ward within the hospital premises, included to help visitors become familiar with the facilities.",
+          "image": "assets/32470.jpg"
+        },
+        {
+          "title": "Floor directory",
+          "text": "A view of the floor directory within the hospital premises, included to help visitors become familiar with the facilities.",
+          "image": "assets/32465.jpg"
+        },
+        {
+          "title": "Registration counter",
+          "text": "A view of the registration counter within the hospital premises, included to help visitors become familiar with the facilities.",
+          "image": "assets/32458.jpg"
+        },
+        {
+          "title": "Clinical ward",
+          "text": "A view of the clinical ward within the hospital premises, included to help visitors become familiar with the facilities.",
+          "image": "assets/32460.jpg"
+        },
+        {
+          "title": "Conference hall",
+          "text": "The photograph shows a conference hall with seating arranged for meetings and presentations.",
+          "image": "assets/32459.jpg"
+        },
+        {
+          "title": "Institutional visit",
+          "text": "A photographic record of a visit; the date and purpose are awaiting confirmation.",
+          "image": "assets/32461.jpg"
+        },
+        {
+          "title": "Group photograph",
+          "text": "A photographic record of a group gathering; participant details and date are awaiting confirmation.",
+          "image": "assets/32462.jpg"
+        },
+        {
+          "title": "Inpatient facilities",
+          "text": "A view of the inpatient facilities within the hospital premises, included to help visitors become familiar with the facilities.",
+          "image": "assets/32475.jpg"
+        },
+        {
+          "title": "Ward beds",
+          "text": "A view of the ward beds within the hospital premises, included to help visitors become familiar with the facilities.",
+          "image": "assets/32472.jpg"
+        },
+        {
+          "title": "Cloth bag vending machine",
+          "text": "The displayed machine promotes the use of reusable cloth bags.",
+          "image": "assets/32482.jpg"
+        },
+        {
+          "title": "Ward interior",
+          "text": "A view of the ward interior within the hospital premises, included to help visitors become familiar with the facilities.",
+          "image": "assets/32481.jpg"
+        },
+        {
+          "title": "Pharmacy counter",
+          "text": "The pharmacy signage identifies designated queues for different groups of visitors.",
+          "image": "assets/32468.jpg"
+        }
+      ],
+      "intro": "Explore photographs of the hospital premises, patient service counters, wards, facilities and institutional visits. Select any photograph to view it in full size, then swipe or use the navigation arrows to browse the collection."
+    },
+    "contact": {
+      "menu": "Contact Us",
+      "title": "Contact Us",
+      "subtitle": "Hospital information",
+      "banner": "assets/32458.jpg",
+      "blocks": [
+        {
+          "title": "Contact details",
+          "text": "Official address, phone and email are awaiting confirmation.",
+          "image": ""
+        }
+      ],
+      "intro": "Use this page to find hospital contact information, open the location in Google Maps or prepare a general enquiry. Please avoid sharing confidential patient information through the enquiry form. Official contact details and the exact map location will be updated once confirmed."
+    },
+    "visits": {
+      "menu": "Visits",
+      "title": "Institutional Visits",
+      "subtitle": "Photo records",
+      "banner": "assets/32458.jpg",
+      "blocks": [
+        {
+          "title": "Visit photograph",
+          "text": "Names, date and purpose awaiting confirmation.",
+          "image": "assets/32461.jpg"
+        },
+        {
+          "title": "Group photograph",
+          "text": "A photographic record of a group gathering; participant details and date are awaiting confirmation.",
+          "image": "assets/32462.jpg"
+        }
+      ],
+      "intro": "This section presents photographic records of visits and group gatherings at the hospital. The images provide a visual record of these occasions; confirmed dates, participant details and the purpose of each visit can be added when available."
+    }
+  },
+  "specialties": [
+    [
+      "General Medicine",
+      "Medical consultations and inpatient medicine wards are listed in the hospital directory.",
+      "assets/32470.jpg",
+      [
+        "Medicine OPD",
+        "Medicine wards",
+        "Clinical assessment"
+      ]
+    ],
+    [
+      "Women’s Health",
+      "The directory identifies gynaecology OPD, women’s wards and labour room facilities.",
+      "assets/32475.jpg",
+      [
+        "Gynaecology OPD",
+        "Labour room",
+        "Women’s wards"
+      ]
+    ],
+    [
+      "Paediatrics",
+      "Child health facilities include paediatric OPD, wards and SNCU as indicated on the directory.",
+      "assets/32472.jpg",
+      [
+        "Paediatric OPD",
+        "Paediatric ward",
+        "SNCU"
+      ]
+    ],
+    [
+      "Surgery",
+      "The directory lists general surgery, operation theatres and postoperative facilities.",
+      "assets/32458.jpg",
+      [
+        "General surgery",
+        "Operation theatres",
+        "Postoperative care"
+      ]
+    ],
+    [
+      "Diagnostics",
+      "Laboratory, sonography and X-ray are listed in the hospital directory.",
+      "assets/32465.jpg",
+      [
+        "Laboratory",
+        "Sonography",
+        "X-ray"
+      ]
+    ],
+    [
+      "Dialysis",
+      "The dialysis department is listed on the fifth floor. Confirm availability with hospital staff.",
+      "assets/32465.jpg",
+      [
+        "Dialysis department",
+        "Patient guidance"
+      ]
+    ]
+  ],
+  "faqs": [
+    [
+      "How do I register for a consultation?",
+      "Visit the case registration counter on the ground floor and follow the displayed queue instructions."
+    ],
+    [
+      "Can I meet a specialist?",
+      "Ask the registration desk about the relevant department and current consultation schedule."
+    ],
+    [
+      "What documents should I bring?",
+      "Bring identification, previous prescriptions and relevant medical reports if available. Confirm admission requirements with staff."
+    ],
+    [
+      "Where can I collect medicines?",
+      "The pharmacy counter is listed on the ground floor. Follow the designated queue."
+    ],
+    [
+      "How do I find a department?",
+      "Use the floor-wise directory on this website and confirm directions with hospital staff."
+    ],
+    [
+      "What are the visiting hours?",
+      "Please confirm current visiting hours and ward rules with the hospital before visiting."
+    ],
+    [
+      "How can I contact the hospital?",
+      "Use the Contact Us page. Official contact details will be added after confirmation."
+    ]
+  ],
+  "contact": {
+    "email": "mahisagarmedicalcollege.com",
+    "phone": "+910000000000",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=General+Hospital+Lunawada+Gujarat",
+    "messageText": "Have a question? Write to the hospital. Please do not include confidential medical information."
+  },
+  "doctors": [
+    {
+      "name": "General Medicine",
+      "role": "Clinical team",
+      "details": "Doctor details to be updated",
+      "image": ""
+    },
+    {
+      "name": "Women’s Health",
+      "role": "Clinical team",
+      "details": "Doctor details to be updated",
+      "image": ""
+    },
+    {
+      "name": "Paediatrics",
+      "role": "Clinical team",
+      "details": "Doctor details to be updated",
+      "image": ""
+    },
+    {
+      "name": "Surgery",
+      "role": "Clinical team",
+      "details": "Doctor details to be updated",
+      "image": ""
+    },
+    {
+      "name": "Diagnostics",
+      "role": "Clinical team",
+      "details": "Doctor details to be updated",
+      "image": ""
+    },
+    {
+      "name": "Dialysis",
+      "role": "Clinical team",
+      "details": "Doctor details to be updated",
+      "image": ""
+    }
+  ]
+}
